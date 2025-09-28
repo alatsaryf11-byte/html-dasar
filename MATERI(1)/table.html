@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 TABLE</title>
+    <style>
+    #table-basic {
+        width: 60%;
+        border-collapse: collapse;
+    }
+    #table-basic td {
+        width: 6px;
+        font-family: arial;
+    }
+    #table-basic .bg-header {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 TABLE</h1>
+    <hr />
+    <h3>Table Basic</h3>
+    <hr />
+    <!-- <table> membuat struktur tabel -->
+    <!-- attr border: memberi garis tepi di tabel -->
+    <table border="1" id="table-basic">
+        <!-- <tr> buat garis baru -->
+        <!-- <td> buat cell/colom data baru -->
+        <!-- tips shourtcut: tr>td*3 -->
+         <tr class="bg-header">
+            <td>no</td>
+            <td>nama</td>
+            <td>hiburan favorit</td>
+            <td>hobi</td>
+         </tr>
+         <tr>
+            <td>1.</td>
+            <td>fudhail</td>
+            <td>joging</td>
+            <td>ndaki gunung</td>
+         </tr>
+         <tr>
+            <td>2.</td>
+            <td>alatsary</td>
+            <td>ngaji</td>
+            <td>tenis meja</td>
+         </tr>
+         <tr>
+            <td>3.</td>
+            <td>sundawiy</td>
+            <td>membantu ortu</td>
+            <td>batmint</td>
+         </tr>
+    </table>
+    <h3>Table HTML 5</h3>
+    <!-- tips shourtcut: table>thead+body+thoot -->
+     <table border="1" style="width: 60%">
+        <thead>
+            <tr>
+                <th>no</th>
+                <th>tanggal</th>
+                <th>nama barang</th>
+                <th>harga barang</th>
+            </tr>
+
+        </thead>
+        <body>
+            <tr>
+                <td>1.</td>
+                <td>20/09/2025</td>
+                <td>nasi padang kawan lamo</td>
+                <td>RP 10.000,-</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>21/09/2025</td>
+                <td>tahu golek</td>
+                <td>RP 5.000,-</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>22/09/2025</td>
+                <td rowspan="2">olive sayap tanpa es teh</td>
+                <td>RP 8.000,-</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>23/09/2025</td>
+                <!-- hapus karena ada rowspan diatas -->
+                <!-- <td>olive sayap tanpa es teh</td> -->
+                <td>RP 8.000,-</td>
+            </tr>
+        </body>
+        <tfoot>
+            <tr>
+                <td colspan="3"><b>total pengeluaran</b></td>
+                <td><b>RP 23.000,-</b></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
