@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tugas UI Card</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas CSS Components</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="container">
-
-    <!-- 1. Alert Info -->
-    <section class="section">
-      <h2>Alert Info</h2>
+    <!-- 1️⃣ALERT INFO -->
+    <section>
+      <h2>1️⃣ Alert Info</h2>
       <div class="alert">
-        <i>Info:</i> Pastikan data Anda sudah lengkap sebelum dikirim.
-        <button class="close-btn">&times;</button>
+        <p>ℹ️ Info: Pastikan data Anda sudah lengkap sebelum dikirim.</p>
+        <button class="close">×</button>
       </div>
     </section>
 
-    <!-- 2. Profile Card -->
-    <section class="section">
-      <h2>Profile Card</h2>
+    <!-- 2️⃣ PROFILE CARD -->
+    <section>
+      <h2>2️⃣ Profile Card</h2>
       <div class="profile-card">
-        <div style="position: relative;">
-          <img src="https://i.pravatar.cc/68?img=1" alt="Profile" class="profile-img">
-          <span class="profile-status">Active</span>
+        <div class="avatar">
+          <img src="images/image.png" alt="User Photo" />
+          <span class="badge">Active</span>
         </div>
-        <div class="profile-info">
-          <h3>Andika Putra</h3>
-          <p>Frontend Developer</p>
-        </div>
+        <h3>fudhail alatsary</h3>
+        <p>Frontend Developer</p>
       </div>
     </section>
 
-    <!-- 3. Pricing Card -->
-    <section class="section">
-      <h2>Pricing Card</h2>
-      <div class="pricing-cards">
-        <div class="pricing-card">
-          <div class="pricing-title">Basic</div>
-          <div class="pricing-price">Rp50.000</div>
-          <div class="pricing-desc">1 Project<br>Community Support</div>
+    <!-- 3️⃣ PRICING CARD -->
+    <section>
+      <h2>3️⃣ Pricing Card</h2>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p class="price">Rp50.000</p>
+          <ul>
+            <li>1 Project</li>
+            <li>Community Support</li>
+          </ul>
           <button>Pilih Paket</button>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-title">Pro</div>
-          <div class="pricing-price">Rp150.000</div>
-          <div class="pricing-desc">5 Projects<br>Priority Support</div>
+
+        <div class="plan highlight">
+          <h3>Pro</h3>
+          <p class="price">Rp150.000</p>
+          <ul>
+            <li>5 Projects</li>
+            <li>Priority Support</li>
+          </ul>
           <button>Pilih Paket</button>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-title">Enterprise</div>
-          <div class="pricing-price">Rp300.000</div>
-          <div class="pricing-desc">Unlimited Projects<br>Dedicated Support</div>
+
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p class="price">Rp300.000</p>
+          <ul>
+            <li>Unlimited Projects</li>
+            <li>Dedicated Support</li>
+          </ul>
           <button>Pilih Paket</button>
         </div>
       </div>
     </section>
   </div>
+
+  <script>
+    // Tutup alert saat tombol X diklik
+    document.querySelector(".close").addEventListener("click", function() {
+      this.parentElement.style.display = "none";
+    });
+  </script>
+
 </body>
 </html>
