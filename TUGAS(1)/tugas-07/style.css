@@ -1,0 +1,98 @@
+/* ===========================
+   Custom Brand & Hover Styles
+   =========================== */
+
+/* Warna Brand untuk Header Navbar Brand Text */
+.navbar-brand {
+  font-weight: 700;
+  color: #053988 !important; /* Warna biru khas HSI */
+}
+
+/* Hover link Navbar */
+.navbar-nav .nav-link:hover {
+  color: #1e6ee6 !important;
+}
+
+/* Card Shadow & Hover Effect untuk Galeri */
+.card {
+  border-radius: 12px; /* rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   Profile / Avatar Image Size
+   =========================== */
+.profile-img {
+  width: 100px;       /* default mobile */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(30,110,230,0.15);
+}
+
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Desktop (≥1200px) */
+@media (min-width: 1200px) {
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/* Video Wrapper (ratio already Bootstrap 5) */
+.ratio video {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Feedback Form - Custom focus color for inputs */
+form .form-control:focus,
+form .form-select:focus,
+form textarea:focus {
+  border-color: #1e6ee6;
+  box-shadow: 0 0 0 0.2rem rgba(30,110,230,0.25);
+}
+
+/* Center text for headings on small screens */
+h2 {
+  font-weight: 600;
+}
+
+/* Table Custom (optional for striped & bordered override) */
+.table-primary {
+  background-color: #1e6ee6 !important;
+  color: #fff;
+}
+
+/* Responsive image in navbar */
+.navbar-brand img {
+  max-height: 80px;
+}
+
+/* Optional spacing utility tweaks */
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}

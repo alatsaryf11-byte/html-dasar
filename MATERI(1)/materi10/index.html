@@ -1,0 +1,114 @@
+<!-- Bootstrap IntelliSense -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load bootstrap css -->
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- .container = buat div pake class otomatis -->
+     <!-- color theme: primary , info , success , warning , danger-->
+     <div class="container bg-light">
+       <h1 class="text-primary">Hello, world!</h1>
+       <div class="alert alert-warning" role="alert">
+        <!-- set warna text , warna border dan padding -->
+          <strong class="text-danger border border-danger p-1">Atensi!</strong> Terjadi kebakaran di depan Olive Chicken
+        </div>
+       <button type="button" class="btn btn-danger">
+        Bahaya
+        </button>
+       <button type="button" class="btn btn-outline-success">
+        Selamatkan Diri Anda
+        </button>
+
+        <hr>
+        <!-- sample row > col = 1 baris max 12 kolom -->
+        <!-- jika kolom lebih dari 12 maka akan turun kebawah -->
+         <div class="row">
+          <div class="col-4 bg-success">BOX KIRI</div>
+          <div class="col-4 bg-info">BOX TENGAH</div>
+          <div class="col-4 bg-danger">BOX KANAN</div>
+         </div>
+         <!-- end row -->
+         <!-- responsive gallery -->
+         <!-- .row>col-3*4>img : 4 kolom img -->
+         <!-- tips multi select: ctrl + d -->
+         <!-- col-md-3 : 4 kolom di layar sedang -->
+         <!-- col-sm-6 : 2 kolom di layar kecil -->
+         <!-- col-12   : 1 kolom di layar sgt kecil -->
+         <div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/653953140/id/foto/candi-hindu-di-bali.webp?a=1&b=1&s=612x612&w=0&k=20&c=DoRhvjU9xFvHAOJFdgT6TQeek6HAEcq1wzAZ3dkw96w=" alt="">
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/500798563/id/foto/city-skyline-at-sunset-jakarta-indonesia.webp?a=1&b=1&s=612x612&w=0&k=20&c=TVnjuiIN-B_pgvNihsj_vQ2ZafoEVrjQ01wnCPpyWdQ=" alt="">
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/2180248178/id/foto/wanita-dengan-sekelompok-petani-membajak-tanah-di-padi-di-padi-di-bali.webp?a=1&b=1&s=612x612&w=0&k=20&c=J8R4ZbiQdJ2Oh9KwBRDAIoLOSgKJRiRvmW_HZICLErw=" alt="">
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/2203635065/id/foto/pura-ulun-danu-bratan-dikelilingi-oleh-danau-yang-tenang-dan-flora-yang-subur.webp?a=1&b=1&s=612x612&w=0&k=20&c=AKKnZLsvBq7EEmccgouwtbONqZE5AGFBg3USEyuyXRQ=" alt="">
+          </div>
+          <!-- 2 img terakhir : 2 kolom sedang | 1 kolom kecil -->
+          <div class="col-md-6 col-sm-12 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/518355150/id/foto/pura-ulun-danu-bratan-at-sunrise-bali-indonesia.jpg?s=1024x1024&w=is&k=20&c=7sag2PF1ycn91hfHSL-X6BiRWkS0130vfgaoNW7kX80=" alt="">
+          </div>
+          <div class="col-md-6 col-sm-12 col-12">
+            <img class="img-thumbnail" src="https://media.istockphoto.com/id/653953140/id/foto/candi-hindu-di-bali.jpg?s=1024x1024&w=is&k=20&c=BYZqlZ5rMDKqk3wVt2QQlrIjAtxvBTTqa9F7xAlSHY4=" alt="">
+          </div>
+         </div>
+
+         <hr>
+         <h2>TABLE AREA</h2>
+         <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+              </tr>
+          </thead>
+            <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+              </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+              </tr>
+            </tbody>
+          </table>
+
+         <hr />
+         <h2>FORM AREA</h2>
+
+
+
+
+
+     </div>
+
+     <!-- <div class="container-fluid bg-primary">
+       <h1>Halo Dunia!</h1>
+       <p>info penerimaan PSB HSI Boarding School 2025.</p>
+     </div> -->
+
+    <!-- load bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

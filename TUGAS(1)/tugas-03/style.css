@@ -201,22 +201,43 @@ tbody tr:nth-child(even){
   background:#f4f6fb;          /* baris genap warna abu muda */
 }
 
-/* Galeri Gambar */
+/* =============================
+   Galeri Gambar (Scroll Horizontal Semua Device)
+============================= */
 .gallery {
-  display: grid;                                      /* Susun item dalam grid */
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Kolom otomatis responsif, min 180px */
-  gap: 15px;                                          /* Jarak antar kotak */
-  margin-bottom: 15px; 
+  display: flex;                 /* Horizontal */
+  gap: 15px;
+  overflow-x: auto;              /* Scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll iOS */
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
 }
 
-img {
-  width: 280px;
-  position: relative;
+.gallery .item {
+  flex: 0 0 auto;                /* Jangan mengecil/tumbuh */
+  width: 180px;                  /* Lebar item tetap */
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
   overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(21, 8, 8, 0.05);
 }
 
+.gallery .item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.gallery .item p {
+  font-size: 0.9rem;
+  padding: 10px;
+  color: #555;
+}
+
+/* Animasi gambar pulse */
 img {
-  width: 250px;
   animation: pulse 1.5s infinite;
 }
 
@@ -224,32 +245,6 @@ img {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
-}
-
-.gallery .item {
-  background: #fff;                                   /* Latar putih */
-  border: 1px solid #eee;                             /* Garis tipis abu */
-  border-radius: 8px;                                 /* Sudut melengkung */
-  overflow: hidden;                                   /* Isi rapih, tidak keluar kotak */
-  text-align: center;                               /* Teks rata tengah */
-  box-shadow: 0 2px 6px rgba(21, 8, 8, 0.05);             /* Bayangan lembut */
-}
-.gallery .item img {
-  width: 100%;                                        /* Gambar isi penuh kotak */
-  height: 140px;                                      /* Tinggi tetap */
-  object-fit: cover;                                  /* Crop biar rapi */
-}
-.gallery .item p {
-  font-size: 0.9rem;                                  /* Ukuran teks kecil */
-  padding: 10px;                                      /* Jarak isi teks */
-  color: #555;                                        /* Warna abu gelap */
-}
-
-/* Video */
-.video-wrapper {
-  border-radius: 8px;                                 /* Sudut melengkung */
-  overflow: hidden;                                   /* Video tetap di dalam kotak */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);              /* Bayangan sedikit lebih tegas */
 }
 
 /* Umum */

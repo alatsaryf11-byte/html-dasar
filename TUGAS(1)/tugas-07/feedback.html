@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback - HSI Boarding School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.webp" alt="Logo HSI" class="me-2" style="max-height:50px;">
+        HSI Boarding School
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="biodata.html">Biodata</a></li>
+          <li class="nav-item"><a class="nav-link" href="jadwal.html">Jadwal</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="card p-4 shadow-sm">
+      <h2 class="mb-3">🧾 Formulir Kontak & Saran</h2>
+      <p>Berikan masukan terbaik Anda untuk pengembangan website ini. Semua input wajib kecuali nama.</p>
+
+      <form class="row g-3">
+        <!-- Nama -->
+        <div class="col-12">
+          <label for="nama" class="form-label">Nama Anda (Opsional)</label>
+          <input type="text" class="form-control" id="nama" placeholder="Tulis nama Anda">
+        </div>
+
+        <!-- Email -->
+        <div class="col-12">
+          <label for="email" class="form-label">Email Anda</label>
+          <input type="email" class="form-control" id="email" placeholder="nama@gmail.com" required>
+        </div>
+
+        <!-- Rating -->
+        <div class="col-12">
+          <label for="rating" class="form-label">Rating Kepuasan Website (Skala 1-10)</label>
+          <input type="number" class="form-control" id="rating" min="1" max="10" required>
+        </div>
+
+        <!-- Rekomendasi -->
+        <div class="col-12">
+          <label class="form-label">Rekomendasi Website Ini?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rekomendasi" id="ya" value="Ya" required>
+            <label class="form-check-label" for="ya">Ya, Sangat</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rekomendasi" id="mungkin" value="Mungkin">
+            <label class="form-check-label" for="mungkin">Mungkin Saja</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rekomendasi" id="tidak" value="Tidak">
+            <label class="form-check-label" for="tidak">Tidak</label>
+          </div>
+        </div>
+
+        <!-- Topik -->
+        <div class="col-12">
+          <label class="form-label">Topik yang paling menarik</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="biodata" name="topik" value="Biodata">
+            <label class="form-check-label" for="biodata">Biodata</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="jadwal" name="topik" value="Jadwal">
+            <label class="form-check-label" for="jadwal">Jadwal</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="galeri" name="topik" value="Galeri">
+            <label class="form-check-label" for="galeri">Galeri</label>
+          </div>
+        </div>
+
+        <!-- Pilih Bidang -->
+        <div class="col-12">
+          <label for="bidang" class="form-label">Saran Pengembangan di Bidang</label>
+          <select id="bidang" class="form-select" required>
+            <option value="">-- Pilih Bidang --</option>
+            <option value="desain">Desain</option>
+            <option value="konten">Konten</option>
+            <option value="fitur">Fitur</option>
+          </select>
+        </div>
+
+        <!-- Pesan -->
+        <div class="col-12">
+          <label for="pesan" class="form-label">Pesan / Saran Lengkap</label>
+          <textarea class="form-control" id="pesan" rows="4" required></textarea>
+        </div>
+
+        <!-- Tombol -->
+        <div class="col-12 text-center">
+          <button type="reset" class="btn btn-secondary me-2">Atur Ulang</button>
+          <button type="submit" class="btn btn-primary">Kirim Feedback</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
